@@ -1,38 +1,16 @@
-/* for the headings and texts */
+/* general rule for the headings and texts */
 h1, h3, p {
     text-align: center;
 }
 
-h1 {
-    font-family: "IBM Plex Mono";
-    font-size: 80px;
-}
-
-.banner {
-    font-family: "IBM Plex Mono";
-    font-size: 32px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
+/* The customizations which will apply to the entire "Home Page" html file */
 body {
     /*background-color: black;*/
     background-image: url("home bg.jpg");
-    /*background-repeat: no-repeat;*/
-    /*background-position: 0px;*/
+    background-repeat: no-repeat;
+    background-size: 6000px 5000px;
+    /*background-position: left center;
     /*background-attachment: scroll;*/
-}
-
-/* for the "Get Started" area */
-.get-started {
-    text-align: center;
-}
-
-/* for the "Get Started" button */
-.get-started button {
-    font-family: "Ubuntu";
-    padding: 20px;
-    border-radius: 15px;
 }
 
 /* for the main content of the page */
@@ -40,22 +18,133 @@ body {
     width: 70%;
     /*max-width: ;*/
     background-color: #ff9933;
+    /*margin-top: 5%;*/
     margin-left: auto;
     margin-right: auto;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     font-family: "Ubuntu";
 }
 
-/* sub headings for About and Contact Us */
-.subhead {
-
+/* Project title and modifications */
+h1 {
+    font-family: "IBM Plex Mono";
+    font-size: 80px;
+    /*margin-top: 0px;*/
+    margin-bottom: 0px;
 }
 
-/* content under sub headings */
+/* Project simple description and modifications */
+.project-info {
+    font-family: "IBM Plex Mono";
+    font-size: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.project-info p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* for the "Get Started" area */
+.get-started {
+    text-align: center;
+    /*padding-bottom: 20px;*/
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+}
+
+/* for the "Get Started" button */
+.get-started button {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: black;
+}
+
+/* for the "Scroll Down" area */
+.scroll-down {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    margin-top: 85px;
+}
+
+/* for the "Scroll Down" elements */
+.scroll-down p {
+    display: inline-block;
+}
+
+/* for the "Scroll Down" icon */
+.iconleft {
+    width: 15%;
+    text-align: right;
+}
+
+/* for the "Scroll Down" icon */
+.iconright {
+    width: 15%;
+    text-align: left;
+}
+
+/* for cropping the icon */
+.fit-img {
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    object-fit: fill;
+    object-position: bottom center;
+}
+
+/* for the "Scroll Down" text */
+.icon-text {
+    width: 70%;
+    text-align: center;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+    /*text-align: right;*/
+}
+
+/* for the sub heading for "About" */
+.about {
+    width: 70%;
+    /*max-width: ;*/
+    background-color: #ff9933;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    font-family: "Ubuntu";
+    padding: 20px;
+}
+
+/* for the sub heading for "Contact Us" */
+.contact {
+    width: 70%;
+    /*max-width: ;*/
+    background-color: #ff9933;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: "Ubuntu";
+    padding: 20px;
+}
+
+/* for the content under sub headings */
 .undersub {
 
 }

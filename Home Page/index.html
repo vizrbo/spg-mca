@@ -9,35 +9,65 @@ Ritwik Biswas, Kaustav Sadhu
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Should have this for the proper encoding -->
         <meta charset="UTF-8">
+        
+        <!-- Must have for Responsive Web Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>The SPG Project</title>
-        <link rel="stylesheet" href="/home/vishwamitra/RB Stuff/The Lab/MCA Major Project/spg-mca/Home Page/styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu|Courier+Prime:bold">
     </head>
     <body>
         <main>
             <!-- This section is for the banner -->
-            <section>
-                <h1>The SPG Project</h1>
-                <p>A simple payment gateway.</p>
-                <!-- Add the "Get Started" button here -->
-                <!-- Connected to the "login" page -->
-                <a href="/home/vishwamitra/RB Stuff/The Lab/MCA Major Project/spg-mca2/Login/Login.html"><button>Get Started</button></a>
-                <!-- <label><input type="button">Get Started</label> -->
-            </section>
+            <div class="home">
+                <section>
+                    <div>
+                        <h1>the SPG Project</h1>
+                        <p class="banner">A simple payment gateway catering to the needs of students, faculty and admins in your institution</p>
+                    </div>
+                    
+                    <div class="get-started">
+                        <!-- Connection to the "login" page -->
+                        <a href="/home/vishwamitra/RB Stuff/The Lab/MCA Major Project/spg-mca2/Login/Login.html"><button>Get Started</button></a>
+                    </div>
+                    
+                    <div>
+                        <!-- Enter down arrow clipart -->
+                    </div>
+                </section>
 
-            <!-- This section is for the "About" -->
-            <section>
-                <h3>About</h3>
-            </section>
+                <!-- This section is for the "About" -->
+                <section>
+                    <div>
+                        <!-- Sub-Heading -->
+                        <h3>About</h3>
+                    </div>
 
-            <!-- This section is for the "Contact" -->
-            <section>
-                <h3>Contact Us</h3>
-            </section>
+                    <div>
+                        <!-- Sub-Heading Content -->
+                    </div>
+                </section>
+
+                <!-- This section is for the "Contact Us" -->
+                <section>
+                    <div>
+                        <!-- Sub-Heading -->
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div>
+                        <!-- Sub-Heading Content -->
+                    </div>
+                </section>
+            </div>
 
         </main>
-        <footer>
-            <small><p>We ❤️ Open-Source! <a href="https://github.com/viishwamitra/spg-mca" target="_blank">Visit the SPG Project on GitHub ✨</a></p></small>
+
+        <footer class="github">
+            <p>We ❤️ Open-Source! <a href="https://github.com/viishwamitra/spg-mca" target="_blank">Visit the SPG Project on GitHub ✨</a></p>
         </footer>
+
     </body>
 </html>

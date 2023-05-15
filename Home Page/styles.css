@@ -1,3 +1,70 @@
+/* for the headings and texts */
 h1, h3, p {
     text-align: center;
+}
+
+h1 {
+    font-family: "IBM Plex Mono";
+    font-size: 80px;
+}
+
+.banner {
+    font-family: "IBM Plex Mono";
+    font-size: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+    /*background-color: black;*/
+    background-image: url("home bg.jpg");
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0px;*/
+    /*background-attachment: scroll;*/
+}
+
+/* for the "Get Started" area */
+.get-started {
+    text-align: center;
+}
+
+/* for the "Get Started" button */
+.get-started button {
+    font-family: "Ubuntu";
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* for the main content of the page */
+.home {
+    width: 70%;
+    /*max-width: ;*/
+    background-color: #ff9933;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: "Ubuntu";
+}
+
+/* sub headings for About and Contact Us */
+.subhead {
+
+}
+
+/* content under sub headings */
+.undersub {
+
+}
+
+/* for the bottom of the page */
+.github {
+    background-color: black;
+    color: white;
+    font-family: "Ubuntu";
+    padding: 20px;
+    border-radius: 15px;
 }

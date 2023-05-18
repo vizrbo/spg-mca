@@ -5,24 +5,26 @@ h1, h3, p {
 
 /* the customizations which will apply to the entire "Home Page" html file */
 body {
-    /*background-color: black;*/
     background-image: url("home bg.jpg");
     background-repeat: no-repeat;
     background-size: 6000px 5000px;
-    /*background-position: left center;
-    /*background-attachment: scroll;*/
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
+
+
+
+/* FIRST SECTION OF THE HOME PAGE */
+
+
+
+
 /* for the main content of the page */
 .home {
     width: 70%;
-    min-width: 700px;
-    /*max-width: ;*/
     background-color: #ff9933;
-    /*margin-top: 5%;*/
     margin-left: auto;
     margin-right: auto;
     /*padding-top: 20px;*/
@@ -100,8 +102,8 @@ h1 {
 .scroll-down {
     font-family: "IBM Plex Mono";
     font-size: 24px;
-    /*padding-left: 20px;
-    padding-right: 20px;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
     margin-top: 85px;
 }
 
@@ -124,7 +126,7 @@ h1 {
 
 /* for cropping the icon */
 .fit-img {
-    width: 30px;;
+    width: 30px;
     height: 20px;
     background-color: transparent;
     object-fit: fill;
@@ -135,16 +137,22 @@ h1 {
 .icon-text {
     width: 70%;
     text-align: center;
-    /*padding-left: 5px;
-    padding-right: 5px;*/
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
     /*text-align: right;*/
 }
+
+
+
+
+/* ABOUT SECTION OF THE HOME PAGE */
+
+
+
 
 /* for the sub heading for "About" */
 .about {
     width: 70%;
-    min-width: 700px;
-    /*max-width: ;*/
     background-color: #ff9933;
     margin-top: 50px;
     margin-left: auto;
@@ -158,17 +166,55 @@ h1 {
     padding-bottom: 20px;
 }
 
-/* lines to design content */
+/* black underlines to design content */
 hr {
     height: 2px;
     background-color: black;
     border-width: 0px;
 }
 
+/* for the content under "About" */
+.underabout {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    padding: 10px;
+    /*display: flex;*/
+}
+
+/* image for "About" */
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+/* image tweaks */
+.fit-image {
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 15px;
+}
+
+/* text for "About" */
+.info {
+    text-align: center;
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+}
+
+
+
+
+/* CONTACT SECTION OF THE HOME PAGE */
+
+
+
+
 /* for the sub heading for "Contact Us" */
 .contact {
     width: 70%;
-    min-width: 700px;
     background-color: #ff9933;
     margin-top: 50px;
     margin-left: auto;
@@ -183,90 +229,57 @@ hr {
     padding-bottom: 20px
 }
 
-/* for the content under sub headings */
-.undersub {
+/* for the content under sub heading "Contact Us" */
+.undercon {
     font-family: "Ubuntu";
     font-size: 18px;
     padding: 10px;
 }
 
-/* content under sub headings' elements */
-.undersub p {
-    display: inline-block;
-}
-
-/* for the "Get Started" button */
-.undersub button {
+/* for the email buttons */
+.undercon button {
     font-family: "Ubuntu";
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: black;
     color: #ff9933;
     /*border: 5px;*/
     border-color: #ff9933;
+    width: 320px;
 }
 
 /* animation for cursor on button */
-.undersub button:hover {
+.undercon button:hover {
     font-family: "Ubuntu";
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     color: black;
     /*border: 5px;*/
     border-color: black;
+    width: 320px;
     cursor: pointer;
 }
 
-/* image for "About" */
-.image {
-    width: 30%;
-    text-align: center;
-}
 
-/* image tweaks */
-.fit-image {
-    /*float: left;*/
-    width: 160px;
-    height: 176px;
-    background-color: transparent;
-    object-fit: cover;
-    object-position: center center;
-}
 
-/* text for "About" */
-.info {
-    width: 70%;
-    text-align: center;
-    /*padding-left: 5px;
-    padding-right: 5px;*/
-}
 
-/* left part of "Contact" */
-.left {
-    width: 50%;
-    text-align: center;
-    /*padding-right: 40px;*/
-}
+/* LAST SECTION OF THE HOME PAGE */
 
-/* right part of "Contact" */
-.right {
-    width: 50%;
-    text-align: left;
-}
+
+
 
 /* for the bottom of the page */
 .github {
     background-color: black;
-    min-width: 706px;
     color: white;
     font-family: "Ubuntu";
     font-size: 18px;

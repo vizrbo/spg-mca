@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Must have for Responsive Web Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The SPG - Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="status.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
+        <link rel="shortcut icon" href="spg logo favicon.png">
+</head>
+<body>
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<h1>Student Payment Gateway</h1>
+		<ul>
+			<li><a href="#" class="active">Manage Students</a></li>
+		</ul>
+	</div>
+
+	<!-- Main Content -->
+	<div class="content">
+		<div class="header">
+			<h2>Student Records</h2>
+			<button class="add-student">Add Student</button>
+			<a href="#" class="main-dashboard">Main Dashboard</a>
+		</div>
+
+		<div class="search-container">
+			<label for="student-id">Enter Student ID:</label>
+			<input type="text" id="student-id" placeholder="Enter Student ID...">
+			<button class="check-status">Check Status</button>
+		</div>
+
+		<div id="student-details">
+			<!-- Student details will be displayed here -->
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

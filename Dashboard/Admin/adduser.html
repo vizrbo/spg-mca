@@ -1,0 +1,45 @@
+<head>
+  <!-- Must have for Responsive Web Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>The SPG - Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="adduser.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
+  <link rel="shortcut icon" href="spg logo favicon.png">
+</head>
+
+<div class="fees-management">
+    <h1>Student Payment Gateway</h1>
+    <p>Manage your students' fees records with ease.</p>
+    <button class="main-dashboard-btn">Main Dashboard</button>
+</div>
+  
+<div class="add-student-form">
+  <h2>Add Student Record</h2>
+  <form>
+    <div class="form-group">
+      <label for="student-id">Student ID</label>
+      <input type="text" id="student-id" name="student-id" required>
+    </div>
+    <div class="form-group">
+      <label for="student-name">Student Name</label>
+      <input type="text" id="student-name" name="student-name" required>
+    </div>
+    <div class="form-group">
+      <label for="stream">Stream</label>
+      <select id="stream" name="stream" required>
+        <option value="">--Select Stream--</option>
+        <option value="Science">MCA</option>
+        <option value="Arts">BCA</option>
+        <option value="Commerce">BTech CSE</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="fees">Fees</label>
+      <input type="number" id="fees" name="fees" min="0" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

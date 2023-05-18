@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f6f8fa;
+}
+
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 240px;
+	height: 100%;
+	background-color: #1f2937;
+	color: #fff;
+	padding: 20px;
+}
+
+.sidebar h1 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+  
+  .main {
+    margin-left: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-student-btn,
+  .check-fees-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #FFC107;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .add-student-btn:hover,
+  .check-fees-btn:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .btn-icon {
+    font-size: 50px;
+    margin: 20px;
+  }
+  
+  .btn-text {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+  }

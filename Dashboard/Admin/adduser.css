@@ -1,57 +1,119 @@
-.fees-management {
-  background-color: #34495e;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.fees-management h1 {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-size: 2.5em; 
-  font-weight: bold; 
-  text-transform: uppercase; 
-  letter-spacing: 2px; 
+  padding: 0;
 }
 
-.fees-management p {
-  margin: 10px 0 0 0;
-  font-size: 1.2em;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(77, 114, 186, 0.872);
+}
+
+.header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.main-dashboard-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  background-color: #ffc107;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-dashboard-btn:hover {
+  background-color: #DBA800;
+}
+
+.main-dashboard-btn,
+.logout-btn {
+  display: inline-block;
+  margin-right: 5px;
+  position: static;
+}
+
+.logout-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  background-color: red;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #513b36;
+}
+
+.dashboard-title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 134px;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
 }
 
 .add-student-form {
   background-color: #f7f7f7;
   border-radius: 5px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 500px;
-  padding: 20px;
+  margin: 30px auto;
+  max-width: 450px;
+  padding: 15px;
+  padding-top: 28px;
 }
 
 .add-student-form h2 {
-  margin: 0 0 20px 0;
-  font-size: 1.5em;
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  font-weight: 500;
   text-align: center;
 }
 
+.form-line {
+  margin-bottom: 15px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-size: 1.2em;
+  margin-bottom: 3px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
+.form-group input[type="password"],
 .form-group input[type="text"],
 .form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group select {
-	width: calc(105% - 20px);
-	padding: 10px;
-	font-size: 1em;
-	border-radius: 5px;
-	border: 1px solid #ccc;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .form-group select {
@@ -63,45 +125,31 @@
 }
 
 .form-group select#stream {
-	width: calc(105% - 20px);
-	padding: 10px;
-	font-size: 1em;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png") no-repeat center right;
-	background-size: 20px;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png") no-repeat center right;
+  background-size: 15px;
 }
 
 .form-group button[type="submit"] {
-  padding: 10px;
+  width: 100%;
+  padding: 8px;
   background-color: #3498db;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2em;
+  font-weight: 600;
 }
 
 .form-group button[type="submit"]:hover {
   background-color: #3e5771;
-}
-
-.main-dashboard-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: yellow;
-  color: #000;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2em;
-}
-
-.main-dashboard-btn:hover {
-  background-color: #ffc107;
 }

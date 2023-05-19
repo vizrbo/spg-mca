@@ -2,41 +2,62 @@
   <!-- Must have for Responsive Web Design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>The SPG - Admin Dashboard</title>
+	<title>The SPG - Add Student</title>
 	<link rel="stylesheet" type="text/css" href="adduser.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
   <link rel="shortcut icon" href="spg logo favicon.png">
 </head>
 
-<div class="fees-management">
-    <h1>Student Payment Gateway</h1>
-    <p>Manage your students' fees records with ease.</p>
+<header class="header">
+  <img src="https://i.imgur.com/2CfkcN4.png" alt="Logo" class="logo">
+  <h1 class="dashboard-title">Add Student Record</h1>
+   <div class="header-buttons">
     <button class="main-dashboard-btn">Main Dashboard</button>
-</div>
+    <button class="logout-btn">Logout</button>
+  </div> 
+
+</header>
   
 <div class="add-student-form">
-  <h2>Add Student Record</h2>
+  <h2>Enter the Student Details</h2>
+  <hr class="form-line">
   <form>
     <div class="form-group">
       <label for="student-id">Student ID</label>
       <input type="text" id="student-id" name="student-id" required>
     </div>
     <div class="form-group">
-      <label for="student-name">Student Name</label>
-      <input type="text" id="student-name" name="student-name" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
     </div>
     <div class="form-group">
       <label for="stream">Stream</label>
       <select id="stream" name="stream" required>
         <option value="">--Select Stream--</option>
-        <option value="Science">MCA</option>
-        <option value="Arts">BCA</option>
-        <option value="Commerce">BTech CSE</option>
+        <option value="MCA">MCA</option>
+        <option value="BCA">BCA</option>
+        <option value="Btech CSE">BTech CSE</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="fees">Fees</label>
-      <input type="number" id="fees" name="fees" min="0" required>
+      <label for="student-name">Student Name</label>
+      <input type="text" id="student-name" name="student-name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="mobile-number">Mobile Number</label>
+      <input type="tel" id="mobile-number" name="mobile-number" required>
+    </div>
+    <div class="form-group">
+      <label for="fathers-name">Father's Name</label>
+      <input type="text" id="fathers-name" name="fathers-name" required>
+    </div>
+    <div class="form-group">
+      <label for="mothers-name">Mother's Name</label>
+      <input type="text" id="mothers-name" name="mothers-name" required>
     </div>
     <div class="form-group">
       <button type="submit">Submit</button>

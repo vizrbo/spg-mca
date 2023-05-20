@@ -1,66 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Must have for Responsive Web Design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 
-	<title>The SPG - Add Student</title>
-	<link rel="stylesheet" type="text/css" href="adduser.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
-  <link rel="shortcut icon" href="spg logo favicon.png">
+    <!-- Must have for Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SPG - Add Student</title>
+    <link rel="stylesheet" href="adduser.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
+    <link rel="shortcut icon" href="spg logo favicon.png">
 </head>
 
-<header class="header">
-  <img src="https://i.imgur.com/2CfkcN4.png" alt="Logo" class="logo">
-  <h1 class="dashboard-title">Add Student Record</h1>
-   <div class="header-buttons">
-    <button class="main-dashboard-btn">Main Dashboard</button>
-    <button class="logout-btn">Logout</button>
-  </div> 
-
-</header>
-  
-<div class="add-student-form">
-  <h2>Enter the Student Details</h2>
-  <hr class="form-line">
-  <form>
-    <div class="form-group">
-      <label for="student-id">Student ID</label>
-      <input type="text" id="student-id" name="student-id" required>
+<body>
+    <div class="navbar">
+        <ul id="left-nav">
+             <li>
+                <img src="spg logo2.png" style="width:16%;"/>
+            </li>
+        </ul>
+        <ul id="right-nav">
+            <a href="/home/vishwamitra/RB Stuff/The Lab/MCA Major Project/spg-mca/Home Page/index.html">Log Out</a>
+        </ul>
+        <ul id="right-nav">
+            <a href="admindash.html">Dashboard</a>
+        </ul>
+        </div>
+    <div class="wrapper">
+        <h2>Enter Student Details</h2>
+        <form method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Student ID" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Password" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <p>Select Stream</p>
+                </div>
+            <div class="input-box">
+                <select>
+                    <option>MCA</option>
+                    <option>BCA</option>
+                    <option>BTech - CSE</option>
+                </select>
+            </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Student Name" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Email" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Phone No." required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Father's Name" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Mother's Name" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div class="form-group">
-      <label for="stream">Stream</label>
-      <select id="stream" name="stream" required>
-        <option value="">--Select Stream--</option>
-        <option value="MCA">MCA</option>
-        <option value="BCA">BCA</option>
-        <option value="Btech CSE">BTech CSE</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="student-name">Student Name</label>
-      <input type="text" id="student-name" name="student-name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="mobile-number">Mobile Number</label>
-      <input type="tel" id="mobile-number" name="mobile-number" required>
-    </div>
-    <div class="form-group">
-      <label for="fathers-name">Father's Name</label>
-      <input type="text" id="fathers-name" name="fathers-name" required>
-    </div>
-    <div class="form-group">
-      <label for="mothers-name">Mother's Name</label>
-      <input type="text" id="mothers-name" name="mothers-name" required>
-    </div>
-    <div class="form-group">
-      <button type="submit">Submit</button>
-    </div>
-  </form>
-</div>
+</body>
+</html>

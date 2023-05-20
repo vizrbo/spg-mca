@@ -2,99 +2,97 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "IBM Plex Mono";
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(77, 114, 186, 0.872);
-}
-
-.header {
-  background-color: #1f2937;
-  color: #fff;
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.dashboard-title {
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  width: 100%;
-  margin-left: 12px; /* Increased margin-left value to move it more right */
-}
-
-.logo {
-  width: 60px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-}
-
-
-.logout-btn {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
-  background-color: red;
-  padding: 6px;
-  border-radius: 5px;
-}
-
-.logout-btn:hover {
-  background-color: #513b36;
-}
-
-.main {
   margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: bisque;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  height: 75px;
 }
 
-.add-student-btn,
-.check-fees-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  margin: 10px;
-  width: 150px;
-  height: 150px;
-  background-color: #FFFFF0;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.add-student-btn:hover,
-.check-fees-btn:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.btn-icon {
-  font-size: 50px;
-  margin: 20px;
-}
-
-.btn-text {
-  font-size: 20px;
+.navbar a {
+  float: left;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #cc610f;
   text-align: center;
-  color: #333;
-  font-weight: 500; /* Updated font-weight to make it slightly bold */
-   margin-top: -39px; /* Adjust the margin-top value to move the text upwards */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #cc610f;
+    border: #cc610f;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+#right-nav{
+    float: right;
+    }
+
+#left-nav{
+    float: left;
+    list-style-type: none;
+    width: 800px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.center{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  background: rgba(246, 244, 244, 0.5);
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(70, 28, 21, 0.195);
+  border-color: black;
+}
+
+.center h1, h2{
+  text-align: center;
+  padding: 10px 0;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.center1{
+  margin-bottom: 8px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+button{
+  margin-left: 100px;
+  width: 300px;
+  height: 50px;
+  border: 2px solid;
+  border-color: #9d3f0d;
+  background: #ea862a;
+  border-radius: 25px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  font-family: "IBM Plex Mono";
+}
+button:hover{
+  border-color: #db7d25;
+  border-width: 5px;
+  transition: .2s;
+}

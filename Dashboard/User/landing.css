@@ -14,8 +14,6 @@ body{
 .navbar {
   overflow: hidden;
   background-color: black;
-  font-family: Tahoma, Geneva, sans-serif;
-  /*background: rgba(0,0,0,0.5);*/
   height: 75px;
 }
 
@@ -24,7 +22,7 @@ body{
   font-size: 18px;
   margin-top: 10px;
   margin-right: 10px;
-  color: #d65311;
+  color: #cc610f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,7 +30,10 @@ body{
 }
 
 .navbar a:hover {
-    color: red;
+    color: rgb(0, 0, 0);
+    background-color: #cc610f;
+    border: #cc610f;
+    border-radius: 25px;
     opacity: 0.7;
 }
 
@@ -45,17 +46,17 @@ body{
     list-style-type: none;
     width: 800px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 .center{
-  /*margin-top: 30px;*/
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 600px;
   height: auto;
   background: rgba(246, 244, 244, 0.5);
   border-radius: 25px;
@@ -94,7 +95,6 @@ input[type="submit"]{
   border-radius: 25px;
   font-size: 18px;
   color: black;
-  /*font-weight: 700;*/
   cursor: pointer;
   outline: none;
   font-family: "Ubuntu";

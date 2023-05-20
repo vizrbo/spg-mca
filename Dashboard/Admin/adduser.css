@@ -1,155 +1,148 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(77, 114, 186, 0.872);
-}
-
-.header {
-  background-color: #1f2937;
-  color: #fff;
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.main-dashboard-btn {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  background-color: #ffc107;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.main-dashboard-btn:hover {
-  background-color: #DBA800;
-}
-
-.main-dashboard-btn,
-.logout-btn {
-  display: inline-block;
-  margin-right: 5px;
-  position: static;
-}
-
-.logout-btn {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
-  background-color: red;
-  padding: 6px;
-  border-radius: 5px;
-}
-
-.logout-btn:hover {
-  background-color: #513b36;
-}
-
-.dashboard-title {
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-  margin-left: 134px;
-}
-
-.logo {
-  width: 60px;
-  height: 50px;
-}
-
-.add-student-form {
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 30px auto;
-  max-width: 450px;
-  padding: 15px;
-  padding-top: 28px;
-}
-
-.add-student-form h2 {
-  margin: 0 0 15px 0;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-}
-
-.form-line {
-  margin-bottom: 15px;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 3px;
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.form-group input[type="password"],
-.form-group input[type="text"],
-.form-group input[type="number"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group select {
-  width: 100%;
-  padding: 8px;
-  font-size: 0.9em;
-  font-weight: 500;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.form-group select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png") no-repeat center right;
-  background-size: 20px;
-}
-
-.form-group select#stream {
-  width: 100%;
-  padding: 8px;
-  font-size: 0.9em;
-  font-weight: 500;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png") no-repeat center right;
-  background-size: 15px;
-}
-
-.form-group button[type="submit"] {
-  width: 100%;
-  padding: 8px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.form-group button[type="submit"]:hover {
-  background-color: #3e5771;
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono";
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: bisque;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    height: 75px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: #cc610f;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+      color: rgb(0, 0, 0);
+      background-color: #cc610f;
+      border: #cc610f;
+      border-radius: 25px;
+      opacity: 0.7;
+  }
+  
+  #right-nav{
+      float: right;
+      }
+  
+  #left-nav{
+      float: left;
+      list-style-type: none;
+      width: 800px;
+      margin-left: 10px;
+      margin-top: 5px;
+  }
+  .wrapper{
+    width: 500px;
+    height: 700px;
+    padding: 25px;
+    margin: 25px auto 0;
+    background: rgba(246, 244, 244, 0.5);
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(70, 28, 21, 0.195);
+  }
+  .wrapper h2{
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .input-group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+  }
+  .input-box{
+    width: 100%;
+    margin-right: 12px;
+  }
+  .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    border: 1px solid #db7d25;
+    border-radius: 25px;
+    background: none;
+    outline: none;
+    transition: 0.3s;
+  }
+  .name:focus{
+    box-shadow: 0 0 2px 1px #db7d25;
+    border: 1px solid #ea862a;
+  }
+  .input-box label{
+    width: 50%;
+    padding: 13px;
+    background-color: #fcfcfc;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+  }
+  .input-box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+  }
+  .input-box label:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .radio:checked + label{
+    background-color: #ea862a;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .input-box select{
+    display: inline-block;
+    width: 350px;
+    padding: 12px;
+    background-color: transparent;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #db7d25;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+  }
+  .input-box select:focus{
+    background-color: #ea862a;
+    border: 1px solid #db7d25;
+    text-align: center;
+  }
+  button{
+    margin-left: 75px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid;
+    border-color: #9d3f0d;
+    background: #ea862a;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    font-family: "IBM Plex Mono";
+  }
+  button:hover{
+    border-color: #db7d25;
+    border-width: 5px;
+    transition: .2s;
+  }

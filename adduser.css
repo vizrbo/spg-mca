@@ -3,21 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "IBM Plex Mono";
-  }
-  body{
+}
+
+body {
     margin: 0;
     padding: 0;
     background-attachment: fixed;
     background-size: cover;
     background-color: bisque;
-  }
-  .navbar {
+}
+
+.navbar {
     overflow: hidden;
     background-color: black;
     height: 75px;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     float: left;
     font-size: 18px;
     color: #cc610f;
@@ -27,55 +29,62 @@
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .navbar a:hover {
-      color: rgb(0, 0, 0);
-      background-color: #cc610f;
-      border: #cc610f;
-      border-radius: 25px;
-      opacity: 0.7;
-  }
-  
-  #right-nav{
-      float: right;
-      }
-  
-  #left-nav{
-      float: left;
-      list-style-type: none;
-      width: 800px;
-      margin-left: 10px;
-      margin-top: 5px;
-  }
-  .wrapper{
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #cc610f;
+    border: #cc610f;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+#right-nav {
+    float: right;
+    }
+
+#left-nav {
+    float: left;
+    list-style-type: none;
+    width: 800px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
     width: 500px;
-    height: 700px;
     padding: 25px;
-    margin: 25px auto 0;
     background: rgba(246, 244, 244, 0.5);
     border-radius: 25px;
     box-shadow: 10px 10px 15px rgba(70, 28, 21, 0.195);
-  }
-  .wrapper h2{
+}
+
+.wrapper h2 {
     font-size: 24px;
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
-  }
-  .input-group{
+}
+
+.input-group {
     margin-bottom: 8px;
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     padding: 5px 0;
-  }
-  .input-box{
+}
+
+.input-box {
     width: 100%;
     margin-right: 12px;
-  }
-  .name{
+}
+
+.name {
     padding: 14px 10px 14px 50px;
     width: 100%;
     border: 1px solid #db7d25;
@@ -83,35 +92,40 @@
     background: none;
     outline: none;
     transition: 0.3s;
-  }
-  .name:focus{
+}
+
+.name:focus {
     box-shadow: 0 0 2px 1px #db7d25;
     border: 1px solid #ea862a;
-  }
-  .input-box label{
+}
+
+.input-box label {
     width: 50%;
     padding: 13px;
     background-color: #fcfcfc;
     float: left;
     text-align: center;
     border: 1px solid #c0bfbf;
-  }
-  .input-box label:first-of-type{
+}
+
+.input-box label:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-right: none;
-  }
-  .input-box label:last-of-type{
+}
+
+.input-box label:last-of-type {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-  }
-  .radio:checked + label{
+}
+
+.radio:checked + label {
     background-color: #ea862a;
     color: #fff;
     transition: 0.5s;
-  }
-  .input-box select{
-    display: inline-block;
+}
+
+.input-box select {
     width: 350px;
     padding: 12px;
     background-color: transparent;
@@ -122,13 +136,15 @@
     border: 1px solid #db7d25;
     border-radius: 25px;
     transition: all 0.2s ease;
-  }
-  .input-box select:focus{
+}
+
+.input-box select:focus {
     background-color: #ea862a;
     border: 1px solid #db7d25;
     text-align: center;
-  }
-  button{
+}
+
+button {
     margin-left: 75px;
     width: 300px;
     height: 50px;
@@ -140,9 +156,10 @@
     color: black;
     outline: none;
     font-family: "IBM Plex Mono";
-  }
-  button:hover{
+}
+
+button:hover {
     border-color: #db7d25;
     border-width: 5px;
     transition: .2s;
-  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Should have this for the proper encoding -->
+        <meta charset="utf-8">
+
+        <!-- Must have for Responsive Web Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>The SPG - Add Student</title>
+        <link rel="stylesheet" href="adduser.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
+        <link rel="shortcut icon" href="spg logo favicon.png">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul id="left-nav">
+                <li>
+                    <img src="spg logo side.png" style="width:16%;"/>
+                </li>
+            </ul>
+
+            <ul id="right-nav">
+                <a href="index.html">Log Out</a>
+            </ul>
+
+            <ul id="right-nav">
+                <a href="admindash.html">Dashboard</a>
+            </ul>
+        </div>
+
+        <!-- STUDENT FORM STARTS HERE -->
+
+        <div class="wrapper">
+            <h2>Enter Student Details</h2>
+
+            <!-- Set up the PHP file -->
+            <form method="POST" action="adduser.php">
+                <!-- Student ID -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: id -->
+                        <input class="name" type="number" placeholder="Create a Student ID (0 - 9)" required name="id">
+                    </div>
+                </div>
+
+                <!-- Student Password -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: userpassword -->
+                        <input class="name" type="text" placeholder="Create a Password" required name="userpassword">
+                    </div>
+                </div>
+
+                <!-- Student Stream -->
+                <div class="input-group">
+                    <div>
+                        <p>Select Stream</p>
+                    </div>
+                    <div class="input-box">
+                        <!-- for MySQL: stream -->
+                        <select name="stream">
+                            <option>MCA</option>
+                            <option>BCA</option>
+                            <option>BTech - CSE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Name -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: studentname -->
+                        <input class="name" type="text" placeholder="Enter the Student's Name" required name="studentname">
+                    </div>
+                </div>
+
+                <!-- Student Email -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: email -->
+                        <input class="name" type="email" placeholder="Enter Student's Email ID" required name="email">
+                    </div>
+                </div>
+
+                <!-- Student Number -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: phone -->
+                        <input class="name" type="number" placeholder="Enter Student's Phone Number" required name="phone">
+                    </div>
+                </div>
+
+                <!-- Student Father -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: father -->
+                        <input class="name" type="text" placeholder="Enter Father's Name" required name="father">
+                    </div>
+                </div>
+
+                <!-- Student Mother -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <!-- for MySQL: mother -->
+                        <input class="name"type="text" placeholder="Enter Mother's Name" required name="mother">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

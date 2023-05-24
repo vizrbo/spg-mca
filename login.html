@@ -18,15 +18,17 @@
             <h1>Login</h1>
             <form method="post" action="login.php">
                 <div class="txt_field">
-                    <input type="number" required>
+                    <!-- for MySQL: formid -->
+                    <input type="number" name="formid" required>
                     <span></span>
-                    <label>ID</label>
+                    <label>Enter your ID (0 - 9)</label>
                 </div>
 
                 <div class="txt_field">
-                    <input type="password" required>
+                    <!-- for MySQL: formpassword -->
+                    <input type="password" name="formpassword" required>
                     <span></span>
-                    <label>Password</label>
+                    <label>Enter your Password</label>
                 </div>
                 
                 <input type="submit" value="Submit">

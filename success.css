@@ -7,8 +7,6 @@
   body{
     margin: 0;
     padding: 0;
-    background-attachment: fixed;
-    background-size: cover;
     background-color: bisque;
   }
   .navbar {
@@ -57,14 +55,32 @@
     border-radius: 25px;
     box-shadow: 10px 10px 15px rgba(70, 28, 21, 0.195);
   }
-  .wrapper h2{
+  .wrapper2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    padding: 25px;
+    margin: 25px auto 0;
+    background: rgba(246, 244, 244, 0.5);
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(70, 28, 21, 0.195);
+  }
+  h2{
     font-size: 24px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: center;
   }
   h4{
     padding-bottom: 5px;
+  }
+  .tx{
+    font-size: 20px;
+    color: #155511f8;
+    text-align: center;
   }
   .input-group{
     margin-bottom: 8px;
@@ -113,7 +129,7 @@
   }
   .radio:checked + label{
     background-color: #ea862a;
-    color: black;
+    color: #fff;
     transition: 0.5s;
   }
   .input-box select{
@@ -133,6 +149,11 @@
     background-color: #ea862a;
     color: #fff;
     text-align: center;
+  }
+  .bt{
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 200px;
   }
   button{
     width: 50%;

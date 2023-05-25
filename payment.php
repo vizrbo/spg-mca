@@ -1,7 +1,7 @@
 <!-- PHP CODE BEGINS -->
 <?php
 // Check if Semester is in the URL
-if (!isset($_GET['Sem'])) {
+if (!isset($_GET['Sem']) || !isset($_GET['ID'])) {
     // Redirect to the login page
     header("Location: login.html");
 }
@@ -16,17 +16,24 @@ $ID = $_GET['ID'];
 require_once "db.php";
     
 // Get the value of Email from the Database
-$sql = "SELECT Email FROM studentdata WHERE ID = $ID";
+$sql = "SELECT * FROM studentdata WHERE ID = $ID";
 $result = $conn->query($sql);
 
 if ($result) { //result = true
     // Store the value of Email in a email variable
     $row = $result->fetch_assoc();
     $email = $row['Email'];
+    $checkSem = $row[$Semester];
+}
+
+// See whether the Semester has already been Paid
+if ($checkSem == 'Paid') {
+    header("Location: login.html");
 }
 
 // Check whether Student has submitted Form
 if (isset($_POST['ID']) && isset($_GET['Sem'])) {
+    
     // Update the value of the Semester to "Paid"
     $sql = "UPDATE studentdata SET $Semester = 'Paid' WHERE ID = $ID";
     $update = $conn->query($sql);
@@ -36,7 +43,7 @@ if (isset($_POST['ID']) && isset($_GET['Sem'])) {
     
     // Redirect Student to the Success Page
     if ($update) {
-        header('Location: success.html?ID=' . $ID . '&Sem=' . $Semester);
+        header('Location: success.html');
         exit();
     }
 }
@@ -104,10 +111,10 @@ if (isset($_POST['ID']) && isset($_GET['Sem'])) {
                 <!-- CARD NUMBER & CVV FIELD -->
                 <div class="input-group">
                     <div class="input-box">
-                        <input type="number" placeholder="Card Number" required class="name">
+                        <input type="tel" placeholder="Card Number" required class="name" pattern="\d{16}">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="CVV" required class="name">
+                        <input type="tel" placeholder="CVV" required class="name" pattern="\d{3}">
                     </div>
                 </div>
 

@@ -41,7 +41,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: id -->
-                        <input class="name" type="number" placeholder="Create a Student ID (0 - 9)" required name="id">
+                        <input class="name" type="text" placeholder="Create a Student ID" required name="id" minlength="7" maxlength="8">
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: userpassword -->
-                        <input class="name" type="text" placeholder="Create a Password" required name="userpassword">
+                        <input class="name" type="text" placeholder="Create a Password" required name="userpassword" minlength="5" maxlength="16">
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: studentname -->
-                        <input class="name" type="text" placeholder="Enter the Student's Name" required name="studentname">
+                        <input class="name" type="text" placeholder="Enter the Student's Name" required name="studentname" maxlength="50">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: email -->
-                        <input class="name" type="email" placeholder="Enter Student's Email ID" required name="email">
+                        <input class="name" type="email" placeholder="Enter Student's Email ID" required name="email" maxlength="50">
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: phone -->
-                        <input class="name" type="number" placeholder="Enter Student's Phone Number" required name="phone">
+                        <input class="name" type="tel" placeholder="Enter Student's Phone Number" required name="phone" pattern="\d{10}">
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: father -->
-                        <input class="name" type="text" placeholder="Enter Father's Name" required name="father">
+                        <input class="name" type="text" placeholder="Enter Father's Name" required name="father" maxlength="50">
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: mother -->
-                        <input class="name"type="text" placeholder="Enter Mother's Name" required name="mother">
+                        <input class="name"type="text" placeholder="Enter Mother's Name" required name="mother" maxlength="50">
                     </div>
                 </div>
 

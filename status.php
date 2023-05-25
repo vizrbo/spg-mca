@@ -37,7 +37,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <!-- for MySQL: id -->
-                        <input class="name" type="text" placeholder="Student ID" required name="id">
+                        <input class="name" type="text" placeholder="Student ID" required name="id" minlength="7" maxlength="8">
                     </div>
                 </div>
                 <div class="input-group">
@@ -62,7 +62,7 @@
                         $id = $_POST['id'];
 
                         // Create the SQL query
-                        $query = "SELECT * FROM studentdata WHERE ID = $id";
+                        $query = "SELECT * FROM studentdata WHERE ID = '$id'";
 
                         // Execute the query
                         $result = $conn->query($query);

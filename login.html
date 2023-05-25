@@ -19,14 +19,14 @@
             <form method="post" action="login.php">
                 <div class="txt_field">
                     <!-- for MySQL: formid -->
-                    <input type="number" name="formid" required>
+                    <input type="text" name="formid" required maxlength="8">
                     <span></span>
-                    <label>Enter your ID (0 - 9)</label>
+                    <label>Enter your ID</label>
                 </div>
 
                 <div class="txt_field">
                     <!-- for MySQL: formpassword -->
-                    <input type="password" name="formpassword" required>
+                    <input type="password" name="formpassword" required maxlength="16">
                     <span></span>
                     <label>Enter your Password</label>
                 </div>

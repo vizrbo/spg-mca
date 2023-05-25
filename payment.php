@@ -19,11 +19,19 @@ require_once "db.php";
 $sql = "SELECT * FROM studentdata WHERE ID = $ID";
 $result = $conn->query($sql);
 
-if ($result) { //result = true
-    // Store the value of Email in a email variable
-    $row = $result->fetch_assoc();
-    $email = $row['Email'];
-    $checkSem = $row[$Semester];
+if ($result) {
+    // Check if the student ID exists in the database
+    if ($result->num_rows > 0) {
+        // Store the value of Email in a email variable
+        $row = $result->fetch_assoc();
+        $email = $row['Email'];
+        $checkSem = $row[$Semester];
+    } else {
+        // Student ID not found, redirect to login.html
+        $conn->close();
+        header("Location: login.html");
+        exit();
+    }
 }
 
 // See whether the Semester has already been Paid

@@ -278,7 +278,7 @@ hr {
 
 
 /* for the bottom of the page */
-.github {
+.gitlab {
     background-color: black;
     color: white;
     font-family: "Ubuntu";
@@ -288,13 +288,13 @@ hr {
 }
 
 /* for links */
-.github a {
+.gitlab a {
     color: white;
     text-decoration: none;
 }
 
 /* for hover links */
-.github a:hover {
+.gitlab a:hover {
     color: #ff9933;
     text-decoration: none;
 }

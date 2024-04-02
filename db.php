@@ -1,8 +1,8 @@
 <?php
 // Database configuration
 $host = "localhost";
-$username = "root";
-$password = "vishwalinux";
+$username = "";
+$password = "";
 $dbname = "spg-mca";
 
 // Create a new mysqli object

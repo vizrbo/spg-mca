@@ -3,7 +3,7 @@
 // Check if Semester is in the URL
 if (!isset($_GET['Sem']) || !isset($_GET['ID'])) {
     // Redirect to the login page
-    header("Location: login.html");
+    header("Location: ../login.html");
 }
 
 // Get the Semester from URL
@@ -13,7 +13,7 @@ $Semester = $_GET['Sem'];
 $ID = $_GET['ID'];
 
 // Include the db.php file
-require_once "db.php";
+require_once "../db.php";
     
 // Get the value of Email from the Database
 $sql = "SELECT * FROM studentdata WHERE ID = $ID";
@@ -29,14 +29,14 @@ if ($result) {
     } else {
         // Student ID not found, redirect to login.html
         $conn->close();
-        header("Location: login.html");
+        header("Location: ../login.html");
         exit();
     }
 }
 
 // See whether the Semester has already been Paid
 if ($checkSem == 'Paid') {
-    header("Location: login.html");
+    header("Location: ../login.html");
 }
 
 // Check whether Student has submitted Form
@@ -68,20 +68,20 @@ if (isset($_POST['ID']) && isset($_GET['Sem'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>The SPG - Payment</title>
-        <link rel="stylesheet" href="styles/payment.css">
+        <link rel="stylesheet" href="../styles/payment.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
-        <link rel="shortcut icon" href="images/spg logo favicon.png">
+        <link rel="shortcut icon" href="../images/spg logo favicon.png">
     </head>
 
     <body>
         <div class="navbar">
             <ul id="left-nav">
                 <li>
-                    <img src="images/spg logo side.png" style="width:16%;"/>
+                    <img src="../images/spg logo side.png" style="width:16%;"/>
                 </li>
             </ul>
             <ul id="right-nav">
-                <a href="index.html">Log Out</a>
+                <a href="../index.html">Log Out</a>
             </ul>
         </div>
 

@@ -8,20 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>The SPG - Student Info</title>
-        <link rel="stylesheet" href="styles/status.css">
+        <link rel="stylesheet" href="../styles/status.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:bold|Ubuntu">
-        <link rel="shortcut icon" href="images/spg logo favicon.png">
+        <link rel="shortcut icon" href="../images/spg logo favicon.png">
     </head>
 
     <body>
         <div class="navbar">
             <ul id="left-nav">
                 <li>
-                    <img src="images/spg logo side.png" style="width:16%;"/>
+                    <img src="../images/spg logo side.png" style="width:16%;"/>
                 </li>
             </ul>
             <ul id="right-nav">
-                <a href="index.html">Log Out</a>
+                <a href="../index.html">Log Out</a>
             </ul>
             <ul id="right-nav">
                 <a href="admindash.html">Dashboard</a>
@@ -53,7 +53,7 @@
                 <tbody>
                     <?php
                         // Include the db.php file
-                        require_once "db.php";
+                        require_once "../db.php";
 
                         // Check if the user submitted a ID
                         if (isset($_POST["id"])) {

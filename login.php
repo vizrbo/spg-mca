@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 
 // If the user is an admin, redirect them to the admin dashboard
 if ($result->num_rows > 0) {
-    header("Location: admindash.html");
+    header("Location: admin/admindash.html");
 } else {
 
     // Check if the user is a student
@@ -28,13 +28,13 @@ if ($result->num_rows > 0) {
     // Redirect the user to the appropriate landing page
     switch ($stream) {
         case "MCA":
-        header("Location: landing4.php?ID=$formid");
+        header("Location: user/landing4.php?ID=$formid");
         break;
         case "BCA":
-        header("Location: landing6.php?ID=$formid");
+        header("Location: user/landing6.php?ID=$formid");
         break;
         case "BTech - CSE":
-        header("Location: landing8.php?ID=$formid");
+        header("Location: user/landing8.php?ID=$formid");
         break;
     }
     } else {

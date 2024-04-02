@@ -1,7 +1,7 @@
 <?php
 
 // Include the db.php file
-require_once "db.php";
+require_once "../db.php";
 
 // Get the form data
 $id = $_POST['id'];
